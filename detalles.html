@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de la Página</title>
+    <link rel="stylesheet" href="details-style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Detalles Turisticos</h1>
+    </header>
+
+    <section>
+        <img src="images/page-banner.jpg" alt="Imagen del lugar">
+        <h2>Nombre del Lugar</h2>
+        <p id="descripcion">Descripción del lugar. Puedes agregar información interesante sobre la ubicación, historia, cultura, etc.</p>
+        <p><strong>Ubicación: </strong><span id="ubicacion">Ciudad, País</span></p>
+        
+        <h3>Áreas Turísticas:</h3>
+        <ul>
+            <!-- <li>Área 1</li> -->
+            
+            <!-- Agrega más áreas turísticas según sea necesario -->
+        </ul>
+
+        <h3>Fechas Disponibles:</h3>
+        <p id="fechas_disponibles">Del 1 al 15 de enero de 2023</p>
+    </section>
+    <script>
+        const imagen = document.querySelector("img");
+        const nombre = document.querySelector("h2");
+        const descripcion = document.getElementById("descripcion");
+        const ubicacion = document.getElementById("ubicacion");
+        const areas_turisticas =document.querySelector("ul");
+        const fechas_disponibles = document.getElementById("fechas_disponibles");
+
+        if (sessionStorage) {
+            let dato = sessionStorage.getItem("objeto");
+            console.log(dato);
+            dato = JSON.parse(dato);
+            imagen.src = "images/" + dato.imagen;
+            nombre.textContent = dato.nombre;
+            descripcion.textContent = dato.descripcion;
+            ubicacion.textContent = dato.ubicacion;
+            dato.areas_turisticas.forEach(area => {
+                let li = document.createElement("li");
+                li.textContent= area;
+                areas_turisticas.append(li);
+            });
+            fechas_disponibles.textContent=dato.fechas_disponibles;
+        }
+    </script>
+</body>
+</html>

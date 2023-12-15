@@ -1,0 +1,39 @@
+{
+    "lugares": [
+      {
+        "nombre": "Ciudad de México",
+        "imagen": "Ciudad de México.jpeg",
+        "descripcion":
+          "Como buena capital, la Ciudad de México es un destino que tiene museos, cultura, vida nocturna, arquitectura, diversión y variedad gastronómica. Cuando estés de visita, si te gusta el teatro, consulta qué obras están en cartelera.Algo que distingue a la Ciudad de México son sus barrios con identidad propia. Descubre el ambiente cosmopolita de Polanco, Condesa y la Roma, los paseos en trajinera en Xochimilco o las encantadoras calles de Coyoacán.",
+        "ubicacion": "Ciudad de México, CDMX, México",
+        "areas_turisticas": [
+          "Las pirámides de Teotihuacán",
+          "Reforma 222",
+          "Perisur",
+          "Antara"
+        ],
+        "fechas_disponibles": "Del 1 al 15 de enero de 2023"
+      },
+      {
+        "nombre": "Puebla",
+        "imagen": "Puebla.jpg",
+        "descripcion":
+          "Puebla es una de las ciudades mexicanas más completas en cuestiones turísticas. Al caminar por el centro histórico, descubrirás su impresionante arquitectura colonial y algunas de las iglesias más bonitas del país, como la Catedral de Puebla y el Templo de Santo Domingo. En el centro también está la Biblioteca Palafoxiana, que es como viajar por el tiempo, ya que conserva su mobiliario original. Date una vuelta por el centro comercial Angelópolis, súbete a la Estrella de Puebla para obtener una gran vista de la ciudad, y visita los fuertes de Loreto y Guadalupe. ¡Ah! Y prueba el mole, los dulces típicos y las cemitas.",
+        "ubicacion": "Puebla de Zaragoza, Puebla, México",
+        "areas_turisticas": [
+          "Estrella de Puebla",
+          "Los fuertes de Loreto y Guadalupe"
+        ],
+        "fechas_disponibles": "Del 16 al 31 de enero de 2023"
+      },
+      {
+        "nombre": "Cancún",
+        "imagen": "Cancún.jpg",
+        "descripcion":
+          "Cancún, más que una playa, es de los mejores destinos turísticos de México y el preferido de los visitantes internacionales que vienen al país. Algo imperdible en Cancún es hospedarse en un hotel todo incluido para olvidarte de la rutina y ponerte en manos de personas expertas en hospitalidad. Por supuesto, salir de noche es imprescindible, y los mejores antros y bares están en la zona conocida como Party Center. Lo que te fascinará de Cancún es que en sus alrededores hay mucho por explorar, desde parques temáticos hasta zonas arqueológicas. Recuerda reservar una noche para cenar en uno de los restaurantes junto a la laguna. Si bien puede ser algo caro, vale mucho la pena la experiencia.",
+        "ubicacion": "Cancún, Quintana Roo, México",
+        "areas_turisticas": ["Party Center"],
+        "fechas_disponibles": "Del 1 al 15 de febrero de 2023"
+      }
+    ]
+  }
