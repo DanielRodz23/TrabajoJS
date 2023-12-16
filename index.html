@@ -12,6 +12,7 @@
     </header>
     <div class="conteiner">
       <img src="images/logo.jpg" alt="" />
+      <h1>Traveling Page</h1>
     </div>
     <div class="carousel-container">
       <button class="carousel-btn prev-btn" onclick="prevSlide()">❮</button>
@@ -60,6 +61,7 @@
           },
         ],
       };
+
       const carrusel = document.querySelector(".carousel");
       datos.lugares.forEach(element => {
         let a = document.createElement("a");
@@ -68,6 +70,10 @@
         let img = document.createElement("img");
         img.src = "images/" + element.imagen;
         img.alt = element.nombre;
+        let h1 = document.createElement("h1");
+        h1.textContent = element.nombre;
+        a.append(h1);
+
         a.append(img);
         carrusel.append(a);
         // console.log(element.nombre);
@@ -88,7 +94,7 @@
 
       function updateCarousel() {
         const carousel = document.querySelector(".carousel");
-        const offset = -currentIndex * ((totalSlides * 100) / totalSlides); // Ajuste del ancho de cada elemento
+        const offset = -currentIndex * ((totalSlides * 100) / totalSlides); 
         carousel.style.transform = `translateX(${offset}%)`;
       }
 
@@ -96,11 +102,8 @@
           var objeto = datos.lugares.find(x=>x.nombre===nombre);
           var json = JSON.stringify(objeto);
           sessionStorage.setItem("objeto", json);
-          // location.href = "Leccion_1_detalles.html";
           location.href = "detalles.html";
         }
-
-      //mostrarDatos();
     </script>
   </body>
 </html>
